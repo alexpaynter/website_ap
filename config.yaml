@@ -1,0 +1,30 @@
+theme: "hugo-PaperMod"
+baseURL: http://example.org/
+languageCode: en-us
+title: Sitey McSiteFace
+
+params:
+    profileMode:
+        enabled: true
+        title: PaperMod
+        subtitle: "☄️ Fast | ☁️ Fluent | 🌙 Smooth | 📱 Responsive"
+        buttons:
+            - name: Blog
+              url: posts
+            - name: Tags
+              url: tags
+
+menu:
+    main:
+        - name: Main
+          url:  
+          weight: 2 
+        - name: Blog
+          url: post/
+          weight: 3 
+        - name: Links
+          url: link/
+          weight: 4 
+        - name: About
+          url:  
+          weight: 5

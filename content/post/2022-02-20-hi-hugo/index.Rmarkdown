@@ -1,0 +1,31 @@
+---
+title: hi hugo
+author: R package build
+date: '2022-02-20'
+slug: []
+categories: []
+tags: []
+---
+
+![](wall-e.png)
+
+# Test header
+
+Some other content
+
+```{r}
+dplyr::glimpse(Orange)
+```
+
+
+```{r echo=FALSE}
+library(ggplot2)
+oplot <- ggplot(Orange, aes(x = age, 
+                   y = circumference, 
+                   colour = Tree)) +
+  geom_point() +
+  geom_line() +
+  guides(colour = "none") +
+  theme_bw()
+oplot
+```
