@@ -1,5 +1,5 @@
 theme: "hugo-PaperMod"
-baseURL: alexpaynter.netlify.app 
+baseURL: https://alexpaynter.netlify.app 
 languageCode: en-us
 title: Alex Paynter
 
