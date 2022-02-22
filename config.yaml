@@ -1,18 +1,26 @@
 theme: "hugo-PaperMod"
 baseURL: alexpaynter.netlify.app 
 languageCode: en-us
-title: Sitey McSiteFace
+title: Alex Paynter
 
 params:
+    defaultTheme: auto
     profileMode:
         enabled: true
-        title: PaperMod
-        subtitle: "☄️ Fast | ☁️ Fluent | 🌙 Smooth | 📱 Responsive"
+        title: links 👇      menu ☝ 
+        subtitle: "(site under construction 🪚🔨🔬🎨)"
         buttons:
             - name: Blog
               url: posts
             - name: Tags
               url: tags
+    socialIcons:
+        - name: github
+          url: "https://github.com/alexpaynter"
+        - name: email
+          url: about/
+        - name: RsS
+          url: "index.xml"
 
 menu:
     main:
@@ -22,9 +30,12 @@ menu:
         - name: Blog
           url: post/
           weight: 3 
+        - name: Projects
+          url: project/
+          weight: 3.5
         - name: Links
           url: link/
           weight: 4 
         - name: About
-          url:  
+          url: about/
           weight: 5
