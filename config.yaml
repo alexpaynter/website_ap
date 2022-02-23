@@ -9,18 +9,22 @@ params:
         enabled: true
         title: links 👇      menu ☝ 
         subtitle: "(site under construction 🪚🔨🔬🎨)"
-        buttons:
-            - name: Blog
-              url: posts
-            - name: Tags
-              url: tags
     socialIcons:
         - name: github
           url: "https://github.com/alexpaynter"
         - name: email
           url: about/
-        - name: RsS
+        - name: RSS
           url: "index.xml"
+    fuseOpts:
+        isCaseSensitive: false
+        shouldSort: true
+        location: 0
+        distance: 1000
+        threshold: 0.4
+        minMatchCharLength: 0
+        keys: ["title", "permalink", "summary", "content"]
+          
 
 menu:
     main:
@@ -36,6 +40,14 @@ menu:
         - name: Links
           url: link/
           weight: 4 
+        - name: Search
+          url: search/
         - name: About
           url: about/
           weight: 5
+          
+outputs:
+    home:
+        - HTML
+        - RSS 
+        - JSON
